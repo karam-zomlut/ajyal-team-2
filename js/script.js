@@ -13,7 +13,6 @@ let inputRightBox = document.createElement("input");
 let btnChange = document.createElement("button");
 
 
-
 // add Attribute (calss or name ... etc) to elements
 heroSection.className = "container";
 paragraph.id = "textFromInput";
@@ -56,62 +55,14 @@ let paragRigtBox = document.createTextNode("Font Color :");
 let textBtnChange = document.createTextNode("Change Now !");
 
 // set style to element
-headerTitle.style = `text-align:center;
-                    background: -webkit-linear-gradient(39deg, #e73785, #aee9f4);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    font-size: 50px`;
-heroSection.style = `width : 60%;
-                    margin: auto;
-                    min-height: 500px;
-                    background: #bdbcd8;
-                    border-radius: 2rem;
-                    box-shadow: 0px 0px 16px #726868;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center`;
-paragraph.style = `font-size: 35px;
-                  color: #fff;
-                  text-shadow: 0px 0px 10px #000;`;
-input.style = `width: 70%;
-              height: 60px;
-              border: none;
-              font-size: 20px;
-              border-radius: 1rem;
-              padding: 0 1.5rem;
-              border-bottom: 2px solid #d66ba6;
-              box-shadow: 0 2px 5px -3px #333;
-              border-right: 3px solid #d66ba6;`;
-sectionTwo.style = `width:75%;
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 1rem;`;
-leftBox.style = `width:50%`;
-rightBox.style = `width:50%`;
-pLeftBox.style = `font-size: 25px;
-                  color: #fff;
-                  text-shadow: 0px 0px 4px #000;`;
+heroSection.className = "heroSection"
+sectionTwo.className ="sectionTwo";
+leftBox.className = "w-50";
+rightBox.className = "w-50";
+pLeftBox.className = "paragraph";
 pRightBox.style.cssText = pLeftBox.style.cssText;
-inputLeftBox.style = `width: 70%;
-                      height: 40px;
-                      padding: 0 1rem;
-                      border-radius: 1rem;
-                      border: none;
-                      box-shadow: rgb(51 51 51) 0px 2px 5px -3px;`;
-inputRightBox.style = `width: 70%;
-                      height: 40px;
-                      border: none;
-                      background: #ffffff;
-                      border-radius: 9px;
-                      padding: 2px 5px;`;
-btnChange.style = `color: #fff;
-                  border: none;
-                  background-image: linear-gradient(146deg, #c1adcf , #d66aa5);
-                  font-size: 25px;
-                  padding: 1rem 2rem;
-                  border-radius: 1rem;
-                  margin-top: 5rem;
-                  box-shadow: 0px 2px 2px #90649a;`;
+inputLeftBox.className = "inputLBox";
+inputRightBox.className = "inputRBox"
 
 // append text to elemet
 headerTitle.append(textHeaderTitle);
