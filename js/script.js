@@ -12,7 +12,6 @@ let pRightBox = document.createElement("p");
 let inputRightBox = document.createElement("input");
 let btnChange = document.createElement("button");
 
-
 // add Attribute (calss or name ... etc) to elements
 heroSection.className = "container";
 paragraph.id = "textFromInput";
@@ -55,14 +54,14 @@ let paragRigtBox = document.createTextNode("Font Color :");
 let textBtnChange = document.createTextNode("Change Now !");
 
 // set style to element
-heroSection.className = "heroSection"
-sectionTwo.className ="sectionTwo";
+heroSection.className = "heroSection";
+sectionTwo.className = "sectionTwo";
 leftBox.className = "w-50";
 rightBox.className = "w-50";
 pLeftBox.className = "paragraph";
 pRightBox.style.cssText = pLeftBox.style.cssText;
 inputLeftBox.className = "inputLBox";
-inputRightBox.className = "inputRBox"
+inputRightBox.className = "inputRBox";
 
 // append text to elemet
 headerTitle.append(textHeaderTitle);
@@ -87,3 +86,15 @@ elementsOfSection.forEach((elemet) =>
 elementsOfSectionTwo.forEach((elemet) =>
   document.getElementById("sectionTwo").append(elemet)
 );
+
+function Refrsh() {
+  const TXT = input.value;
+  const SZE = inputLeftBox.value;
+  const CLR = inputRightBox.value;
+
+  paragraph.textContent = TXT;
+  paragraph.style.color = CLR;
+  paragraph.style.fontSize = SZE + "px";
+}
+
+btnChange.addEventListener("click", Refrsh);
